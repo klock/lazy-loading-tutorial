@@ -1,0 +1,12 @@
+<div class="subprep"><p>
+  SUBPREP works!
+</p>
+
+  <button [routerLink]="['/', 'administration', 'administrationForm']">admin form</button>
+  <a [routerLink]="['/', 'administration', 'administrationForm']">admin form</a>
+  <br>
+  <button [routerLink]="[{ outlets: { adminForm: ['administration', 'administrationForm'] } } ]">Nav to admin</button>
+  <button (click)="cancelAdminOutlet()">close admin</button>
+
+  <router-outlet name="adminForm"></router-outlet>
+</div>

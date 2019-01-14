@@ -15,6 +15,11 @@ const ROUTES = [
     pathMatch: 'prefix',
     loadChildren: './admin-module/administration.module#AdministrationModule',
   },
+  {
+    path: 'nursePreparationList',
+    pathMatch: 'prefix',
+    loadChildren: './prep-module/prep.module#PrepModule',
+  },
 ];
 
 @NgModule({
