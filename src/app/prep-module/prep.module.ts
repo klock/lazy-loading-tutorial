@@ -17,7 +17,7 @@ const routes: Routes = [
           {
             path: 'administration',
             pathMatch: 'prefix',
-            loadChildren: '../admin-module/administration.module#AdministrationModule',
+            loadChildren: '../admin-routed/admin-routed.module#AdminRoutedModule',
             outlet: 'adminForm',
           },
         ]

@@ -13,7 +13,7 @@ const ROUTES = [
   {
     path: 'administration',
     pathMatch: 'prefix',
-    loadChildren: './admin-module/administration.module#AdministrationModule',
+    loadChildren: './admin-routed/admin-routed.module#AdminRoutedModule',
   },
   {
     path: 'nursePreparationList',
