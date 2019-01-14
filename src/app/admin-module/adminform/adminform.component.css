@@ -2,3 +2,8 @@
   background-color: #18bffd;
   padding: 10px;
 }
+
+.admin-form-administrations {
+  display: flex;
+  flex-direction: row;
+}

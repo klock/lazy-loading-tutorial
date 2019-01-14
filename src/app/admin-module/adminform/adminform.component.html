@@ -2,4 +2,12 @@
   <p>
     ADMINFORM works!
   </p>
+  <div class="admin-form-administrations"
+       *ngFor="let administration of administrations">
+    <app-admin-display [administration]="administration"
+                       (adminClicked)="onAdminSelection($event)"></app-admin-display>
+  </div>
+  <p>
+    Selected: {{adminSelected}}
+  </p>
 </div>
