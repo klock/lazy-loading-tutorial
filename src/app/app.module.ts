@@ -10,6 +10,11 @@ const ROUTES = [
     pathMatch: 'prefix',
     loadChildren: './lazy-module/lazy.module#LazyModule',
   },
+  {
+    path: 'administration',
+    pathMatch: 'prefix',
+    loadChildren: './admin-module/administration.module#AdministrationModule',
+  },
 ];
 
 @NgModule({
