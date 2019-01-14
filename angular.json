@@ -39,10 +39,11 @@
               "outputHashing": "all",
               "sourceMap": false,
               "extractCss": true,
-              "namedChunks": false,
+              "namedChunks": true,
+              "progress": true,
               "aot": true,
               "extractLicenses": true,
-              "vendorChunk": false,
+              "vendorChunk": true,
               "buildOptimizer": true,
               "budgets": [
                 {
