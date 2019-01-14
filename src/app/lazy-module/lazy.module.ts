@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Router, RouterModule } from '@angular/router';
+import { AdministrationModule } from '../admin-module/administration.module';
 
 import { LazyComponent } from './lazy.component';
 import { SublazyComponent } from './sublazy/sublazy.component';
@@ -22,6 +23,7 @@ const ROUTES = [
     SublazyComponent,
   ],
   imports: [
+    AdministrationModule,
     RouterModule.forChild(ROUTES),
   ]
 })
