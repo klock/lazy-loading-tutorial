@@ -4,7 +4,8 @@ import { Router } from '@angular/router';
 @Component({
   selector: 'app-lazy-component',
   template: `
-    <h3>lazy component</h3>
+    <h3>LAZY component</h3>
+    <router-outlet></router-outlet>
   `
 })
 export class LazyComponent implements OnInit {

@@ -5,7 +5,11 @@ import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 
 const ROUTES = [
-  { path: 'lazy', loadChildren: './lazy-module/lazy.module#LazyModule' }
+  {
+    path: 'lazy',
+    pathMatch: 'prefix',
+    loadChildren: './lazy-module/lazy.module#LazyModule',
+  },
 ];
 
 @NgModule({

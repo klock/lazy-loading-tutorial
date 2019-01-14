@@ -1,6 +1,10 @@
-<p>
-  Lazy Loading a Module
-</p>
-<a [routerLink]="['/lazy']">Load module</a>
+<nav style="display: flex;
+flex-direction: column">
+  <a [routerLink]="['/']">Home</a>
 
+  <a [routerLink]="['/lazy']">Lazy module</a>
+  <a [routerLink]="['/lazy', 'subroute']">sub Lazy</a>
+</nav>
+
+<h1>Content</h1>
 <router-outlet></router-outlet>

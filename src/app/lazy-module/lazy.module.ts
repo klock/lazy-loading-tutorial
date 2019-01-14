@@ -1,19 +1,33 @@
 import { NgModule } from '@angular/core';
-import { RouterModule } from '@angular/router';
+import { Router, RouterModule } from '@angular/router';
 
 import { LazyComponent } from './lazy.component';
+import { SublazyComponent } from './sublazy/sublazy.component';
 
 const ROUTES = [
-  { path: '', component: LazyComponent }
+  { path: '',
+    component: LazyComponent,
+    children: [
+      {
+        path: 'subroute',
+        component: SublazyComponent,
+      }
+    ]
+  }
 ];
 
 @NgModule({
   declarations: [
-    LazyComponent
+    LazyComponent,
+    SublazyComponent,
   ],
   imports: [
-    RouterModule.forChild(ROUTES)
+    RouterModule.forChild(ROUTES),
   ]
 })
-export class LazyModule { }
+export class LazyModule {
+  constructor(router: Router) {
+    console.log('LazyModule routes', router.config);
+  }
+}
 
